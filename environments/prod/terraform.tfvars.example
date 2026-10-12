@@ -1,0 +1,12 @@
+location            = "South Africa North"
+resource_group_name = "rg-bluepeak-prod-san"
+vnet_name           = "vnet-bluepeak-prod-san"
+
+vnet_address_space = ["10.80.0.0/16"]
+
+management_subnet_prefix = ["10.80.1.0/24"]
+app_subnet_prefix        = ["10.80.2.0/24"]
+data_subnet_prefix       = ["10.80.3.0/24"]
+
+app_nsg_name         = "nsg-bluepeak-app-prod-san"
+allowed_https_source = "203.0.113.0/24"
